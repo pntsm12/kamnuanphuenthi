@@ -2,293 +2,221 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="google-site-verification" content="BcwokyN2W4FMCCIj4YbvGcFCJojtQgojttCnNHCTtL4" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>คำนวณพื้นที่ห้องออนไลน์</title>
-<meta name="description" content="คำนวณพื้นที่ห้องออนไลน์ฟรี ใส่ความกว้างและความยาว รู้พื้นที่เป็นตารางเมตร ตารางวา ตารางฟุต พร้อมคำแนะนำขนาดแอร์และปริมาณวัสดุ">
-<meta name="keywords" content="คำนวณพื้นที่ห้อง, พื้นที่ห้อง, ตารางเมตร, ขนาดแอร์, กระเบื้อง, พื้นลามิเนต">
-<meta property="og:title" content="คำนวณพื้นที่ห้องออนไลน์">
-<meta property="og:description" content="คำนวณพื้นที่ห้องออนไลน์ฟรี รู้พื้นที่ตารางเมตร ตารางวา พร้อมคำแนะนำขนาดแอร์">
-<meta property="og:type" content="website">
+<meta name="google-site-verification" content="BcwokyN2W4FMCCIj4YbvGcFCJojtQgojttCnNHCTtL4">
+<title>คำนวณพื้นที่ห้อง ตารางเมตร ตารางวา ตารางฟุต — ออนไลน์ฟรี</title>
+<meta name="description" content="คำนวณพื้นที่ห้องออนไลน์ฟรี กรอกกว้างและยาว รู้พื้นที่ตารางเมตร ตารางวา ตารางฟุต ทันที รองรับหน่วยเมตร เซนติเมตร และฟุต">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://pntsm12.github.io/kamnuanphuenthi/">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:title" content="คำนวณพื้นที่ห้อง ตารางเมตร ตารางวา ตารางฟุต"><meta property="og:url" content="https://pntsm12.github.io/kamnuanphuenthi/"><meta property="og:locale" content="th_TH"><meta property="og:site_name" content="คำนวณ">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+  {"@type":"WebApplication","name":"คำนวณพื้นที่ห้อง","url":"https://pntsm12.github.io/kamnuanphuenthi/","description":"คำนวณพื้นที่ห้องออนไลน์ฟรี ตารางเมตร ตารางวา ตารางฟุต","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"THB"},"inLanguage":"th","isAccessibleForFree":true},
+  {"@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"พื้นที่ห้องคำนวณยังไง","acceptedAnswer":{"@type":"Answer","text":"พื้นที่ห้อง = ความกว้าง x ความยาว เช่น ห้อง 4x5 เมตร = 20 ตารางเมตร"}},
+    {"@type":"Question","name":"1 ตารางเมตร เท่ากับกี่ตารางวา","acceptedAnswer":{"@type":"Answer","text":"1 ตารางเมตร เท่ากับ 0.25 ตารางวา หรือ 1 ตารางวา เท่ากับ 4 ตารางเมตร"}},
+    {"@type":"Question","name":"1 ตารางเมตร เท่ากับกี่ตารางฟุต","acceptedAnswer":{"@type":"Answer","text":"1 ตารางเมตร เท่ากับ 10.764 ตารางฟุต"}}
+  ]}
+]}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1063556443578237" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--bg:#FFFFFF;--bg2:#F7F7F5;--bg3:#F0EFEC;--border:#E4E4E0;--border2:#D4D4CF;--text:#1A1917;--text2:#706F6B;--text3:#B0AFA9;--ink:#1A1917;--accent:#2563EB;--header-bg:rgba(255,255,255,0.92);--logo-fill:#1A1917;}
-[data-theme="dark"]{--bg:#0F0F0F;--bg2:#1A1A1A;--bg3:#222222;--border:#2A2A2A;--border2:#333333;--text:#F0EFE8;--text2:#9A9890;--text3:#555450;--ink:#F0EFE8;--accent:#60A5FA;--header-bg:rgba(15,15,15,0.92);--logo-fill:#F0EFE8;}
-html{scroll-behavior:smooth;}
-body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;}
-header{position:sticky;top:0;z-index:100;background:var(--header-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:56px;display:flex;align-items:center;padding:0 20px;gap:10px;}
-.header-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex:1;}
-.logo-icon svg{width:32px;height:32px;display:block;}
-.logo-text{display:flex;flex-direction:column;line-height:1.1;}
-.logo-text-th{font-family:'Noto Serif Thai',serif;font-size:16px;font-weight:700;color:var(--text);}
-.logo-text-en{font-size:10px;font-weight:500;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
-.dark-toggle{width:36px;height:36px;border:1.5px solid var(--border);border-radius:50%;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;color:var(--text2);flex-shrink:0;}
-.dark-toggle:hover{border-color:var(--border2);color:var(--text);}
-.ad-strip{background:var(--bg2);border-bottom:1px solid var(--border);display:flex;justify-content:center;padding:8px 16px;}
-.ad-728{width:100%;max-width:728px;height:90px;background:var(--bg);border:1.5px dashed var(--border2);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--text3);font-size:12px;}
-@media(max-width:600px){.ad-728{height:60px;}}
-.ad-mid{display:flex;justify-content:center;margin:28px 0;}
-.page-wrap{max-width:640px;margin:0 auto;padding:36px 20px 64px;}
-.page-heading{margin-bottom:28px;}
-.page-heading h1{font-family:'Noto Serif Thai',serif;font-size:clamp(28px,6vw,40px);font-weight:700;color:var(--text);line-height:1.15;letter-spacing:-0.5px;}
-.page-heading p{margin-top:8px;font-size:15px;color:var(--text2);}
-.field-label{font-size:13px;font-weight:600;color:var(--text2);letter-spacing:0.3px;margin-bottom:8px;display:block;}
-.hint{font-size:12px;color:var(--text3);margin-bottom:12px;}
-hr.section-hr{border:none;border-top:1px solid var(--border);margin:20px 0;}
-.unit-toggle{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px;}
-.unit-btn-sm{padding:10px 8px;border:1.5px solid var(--border);border-radius:9px;background:var(--bg);color:var(--text2);font-family:'Sarabun',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:all .15s;text-align:center;}
-.unit-btn-sm.active{background:var(--ink);color:var(--bg);border-color:var(--ink);}
-.unit-btn-sm:hover:not(.active){border-color:var(--border2);}
-.input-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
-.input-group{}
-.input-wrap{display:flex;align-items:center;border:1.5px solid var(--border);border-radius:8px;overflow:hidden;background:var(--bg);transition:border-color .15s,box-shadow .15s;}
-.input-wrap:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,0.1);}
-.input-wrap input{flex:1;padding:11px 14px;border:none;outline:none;font-family:'Sarabun',sans-serif;font-size:20px;font-weight:600;color:var(--text);background:transparent;width:100%;}
-.input-wrap input::placeholder{color:var(--text3);font-weight:400;font-size:15px;}
-.input-suffix{padding:0 12px;font-size:13px;font-weight:600;color:var(--text3);border-left:1px solid var(--border);background:var(--bg2);min-height:46px;display:flex;align-items:center;}
-.btn-calc{width:100%;margin-top:8px;padding:13px;background:var(--ink);color:var(--bg);border:none;border-radius:9px;font-family:'Sarabun',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:opacity .15s,transform .1s;}
-.btn-calc:hover{opacity:0.85;}
-.btn-calc:active{transform:scale(0.99);}
-.btn-reset{width:100%;margin-top:8px;padding:11px;background:transparent;border:1.5px solid var(--border);border-radius:9px;font-family:'Sarabun',sans-serif;font-size:14px;color:var(--text2);cursor:pointer;transition:all .15s;}
-.btn-reset:hover{border-color:var(--border2);color:var(--text);}
-.result-box{display:none;margin-top:28px;animation:fadeUp .35s ease;}
-@keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
-.result-main{padding:28px 0 24px;border-top:1.5px solid var(--border);border-bottom:1.5px solid var(--border);margin-bottom:16px;}
-.result-label{font-size:12px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--text3);margin-bottom:6px;}
-.result-num{font-family:'Noto Serif Thai',serif;font-size:clamp(52px,13vw,80px);font-weight:700;color:var(--text);line-height:1;letter-spacing:-2px;}
-.result-unit{font-family:'Noto Serif Thai',serif;font-size:22px;font-weight:400;color:var(--text2);margin-left:6px;vertical-align:bottom;display:inline-block;margin-bottom:6px;}
-.stats-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1.5px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:12px;}
-.stat-cell{background:var(--bg);padding:16px;text-align:center;}
-.stat-num{font-family:'Noto Serif Thai',serif;font-size:20px;font-weight:700;color:var(--text);letter-spacing:-0.5px;}
-.stat-label{font-size:12px;color:var(--text3);margin-top:3px;}
-.tips-card{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:12px;}
-.tips-title{font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px;}
-.tip-item{display:flex;gap:10px;font-size:14px;color:var(--text2);line-height:1.6;margin-bottom:8px;}
-.tip-item:last-child{margin-bottom:0;}
-.tip-dot{width:5px;height:5px;background:var(--text3);border-radius:50%;flex-shrink:0;margin-top:9px;}
-.share-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px;}
-.btn-share-action{padding:11px 8px;border-radius:9px;border:1.5px solid var(--border);background:transparent;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:600;color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;}
-.btn-share-action:hover{border-color:var(--border2);color:var(--text);}
-.history-section{margin-top:32px;border-top:1px solid var(--border);padding-top:24px;}
-.history-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
-.history-title{font-size:13px;font-weight:600;color:var(--text2);}
-.btn-clear-history{font-size:12px;color:var(--text3);background:none;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;}
-.btn-clear-history:hover{color:var(--text2);}
-.history-list{display:flex;flex-direction:column;gap:8px;}
-.history-item{background:var(--bg2);border:1.5px solid var(--border);border-radius:9px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;}
-.history-item-left{flex:1;}
-.history-item-area{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--text);}
-.history-item-detail{font-size:12px;color:var(--text3);margin-top:2px;}
-.history-item-right{font-size:12px;color:var(--text3);}
-.history-empty{font-size:14px;color:var(--text3);text-align:center;padding:16px 0;}
-.info-section{border-top:1px solid var(--border);padding-top:32px;}
-.info-section h2{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--text);margin-bottom:8px;}
-.info-section h2.mt{margin-top:24px;}
-.info-section p{font-size:14px;color:var(--text2);line-height:1.85;}
-footer{border-top:1px solid var(--border);padding:24px 20px;text-align:center;font-size:13px;color:var(--text3);}
-footer a{color:var(--text3);text-decoration:none;}
-footer a:hover{color:var(--text2);text-decoration:underline;}
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:var(--bg);padding:10px 20px;border-radius:8px;font-size:14px;font-weight:500;transition:transform .3s ease;z-index:999;pointer-events:none;}
-.toast.show{transform:translateX(-50%) translateY(0);}
+:root{--bg:#F8F8F7;--s0:#FFFFFF;--s1:#F2F1EE;--s2:#ECEAE6;--b0:rgba(0,0,0,0.07);--b1:rgba(0,0,0,0.13);--t0:#18181A;--t1:#4A4946;--t2:#7A7872;--ink:#18181A;--inv:#FFFFFF;--r:8px;--r-lg:12px;}
+[data-theme="dark"]{--bg:#111110;--s0:#1C1C1A;--s1:#242422;--s2:#2C2B28;--b0:rgba(255,255,255,0.07);--b1:rgba(255,255,255,0.13);--t0:#EDEAE2;--t1:#A8A49C;--t2:#68655E;--ink:#EDEAE2;--inv:#111110;}
+:focus-visible{outline:2px solid #2563EB;outline-offset:2px;border-radius:4px;}:focus:not(:focus-visible){outline:none;}
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--ink);color:var(--inv);padding:8px 16px;border-radius:0 0 var(--r) var(--r);font-size:13px;font-weight:600;text-decoration:none;z-index:999;transition:top .15s;}.skip-link:focus{top:0;}
+html{scroll-behavior:smooth;}body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--t0);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;}
+header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 20px;gap:12px;border-bottom:1px solid var(--b0);background:rgba(248,248,247,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);}[data-theme="dark"] header{background:rgba(17,17,16,0.92);}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:1;}.logo svg{width:30px;height:30px;display:block;flex-shrink:0;}.logo-t{display:flex;flex-direction:column;line-height:1.1;}.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:var(--t0);}.logo-en{font-size:9px;font-weight:600;color:var(--t2);letter-spacing:2px;}
+.hdr-right{display:flex;align-items:center;gap:8px;}.back-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border:1px solid var(--b0);border-radius:20px;font-family:'Sarabun',sans-serif;font-size:12px;color:var(--t1);text-decoration:none;transition:border-color .15s,color .15s;white-space:nowrap;}.back-btn:hover{border-color:var(--b1);color:var(--t0);}.back-btn svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.dark-btn{width:32px;height:32px;border:1px solid var(--b0);border-radius:6px;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;}.dark-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}.dark-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.ad-bar{display:flex;justify-content:center;padding:8px 16px;background:var(--s1);border-bottom:1px solid var(--b0);}.ad-728{width:100%;max-width:728px;height:90px;background:var(--s0);border:1px dashed var(--b1);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--t2);font-size:12px;}@media(max-width:600px){.ad-728{height:60px;}}
+.page{max-width:580px;margin:0 auto;padding:28px 20px 72px;}.page-hd{margin-bottom:20px;}.page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(22px,4vw,30px);font-weight:700;color:var(--t0);line-height:1.1;letter-spacing:-.3px;}.page-hd p{margin-top:6px;font-size:14px;color:var(--t1);}
+.card{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;}.card-body{padding:16px 18px;}.field{margin-bottom:14px;}.field:last-child{margin-bottom:0;}.lbl{font-size:13px;font-weight:600;color:var(--t0);margin-bottom:6px;display:block;}.hint{font-size:12px;color:var(--t2);margin-top:4px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}@media(max-width:400px){.grid2{grid-template-columns:1fr;}}
+.inp-row{display:flex;align-items:center;border:1px solid var(--b0);border-radius:var(--r);overflow:hidden;background:var(--s0);transition:border-color .15s;}.inp-row:focus-within{border-color:var(--b1);}
+.inp-suf{padding:0 11px;font-size:13px;color:var(--t2);background:var(--s1);height:44px;display:flex;align-items:center;border-left:1px solid var(--b0);flex-shrink:0;white-space:nowrap;}
+.inp-row input{flex:1;height:44px;border:none;background:transparent;padding:0 11px;font-family:'Sarabun',sans-serif;font-size:17px;color:var(--t0);outline:none;min-width:0;}.inp-row input::placeholder{color:var(--t2);}
+.unit-tabs{display:flex;gap:5px;margin-bottom:14px;}.u-tab{padding:6px 16px;border:1px solid var(--b0);border-radius:20px;background:transparent;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);cursor:pointer;transition:all .15s;}.u-tab:hover{border-color:var(--b1);}.u-tab.on{background:var(--ink);border-color:var(--ink);color:var(--inv);}
+.btn-calc{width:100%;height:46px;background:var(--ink);color:var(--inv);border:none;border-radius:var(--r);font-family:'Sarabun',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:opacity .15s;margin-top:6px;}.btn-calc:hover{opacity:.87;}
+/* Result */
+.result-box{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-top:10px;display:none;}
+.result-top{padding:22px 20px;text-align:center;border-bottom:1px solid var(--b0);}
+.result-lbl{font-size:11px;font-weight:600;color:var(--t2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;}
+.result-num{font-family:'Noto Serif Thai',serif;font-size:clamp(44px,11vw,64px);font-weight:700;color:var(--t0);line-height:1;}
+.result-unit{font-size:16px;color:var(--t1);margin-left:5px;}
+.result-sub{font-size:13px;color:var(--t1);margin-top:8px;}
+.result-body{padding:14px 20px;}
+.bd-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid var(--b0);font-size:14px;}.bd-row:last-child{border-bottom:none;}.bd-lbl{color:var(--t1);}.bd-val{font-weight:600;color:var(--t0);}
+/* History */
+.hist-wrap{margin-top:14px;}.hist-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}.hist-lbl{font-size:12px;font-weight:600;color:var(--t1);}.hist-clr{font-size:12px;color:var(--t2);background:none;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;padding:0;}.hist-clr:hover{color:var(--t1);}
+.hist-list{display:flex;flex-direction:column;gap:5px;}.h-item{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r);padding:9px 13px;}.h-main{font-size:14px;font-weight:600;color:var(--t0);}.h-sub{font-size:11px;color:var(--t2);margin-top:2px;}.h-empty{font-size:13px;color:var(--t2);padding:12px;text-align:center;}
+/* FAQ */
+.faq-wrap{margin-top:28px;border-top:1px solid var(--b0);padding-top:24px;}.faq-h2{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--t0);margin-bottom:14px;}.faq-item{border:1px solid var(--b0);border-radius:var(--r);overflow:hidden;margin-bottom:8px;}.faq-q{width:100%;padding:13px 16px;background:var(--s0);border:none;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:var(--t0);text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;transition:background .15s;}.faq-q:hover{background:var(--s1);}.faq-q svg{width:14px;height:14px;stroke:var(--t2);stroke-width:2;fill:none;stroke-linecap:round;flex-shrink:0;transition:transform .2s;}.faq-q[aria-expanded="true"] svg{transform:rotate(180deg);}.faq-a{padding:0 16px;font-size:13px;color:var(--t1);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .25s ease,padding .25s ease;}.faq-a.open{max-height:300px;padding:0 16px 14px;}
+.related-wrap{margin-top:20px;border-top:1px solid var(--b0);padding-top:20px;}.related-lbl{font-size:11px;font-weight:600;color:var(--t2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;}.related-card{display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--s0);border:1px solid var(--b0);border-radius:var(--r);text-decoration:none;color:var(--t0);transition:border-color .14s,background .14s;}.related-card:hover{border-color:var(--b1);background:var(--s1);}.related-ico{width:28px;height:28px;background:var(--ink);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}.related-ico svg{width:12px;height:12px;stroke:var(--inv);stroke-width:1.75;fill:none;stroke-linecap:round;stroke-linejoin:round;}.related-name{font-size:12px;font-weight:500;}
+footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);}footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
+@media(max-width:480px){header,.page{padding-left:16px;padding-right:16px;}}
 </style>
 </head>
 <body>
-<header>
-  <a class="header-logo" href="/">
-    <div class="logo-icon">
-      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="7" fill="var(--logo-fill)"/>
-        <text x="5" y="24" font-family="Arial Black, sans-serif" font-size="22" font-weight="900" fill="var(--bg)">K</text>
-        <text x="14" y="27" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="var(--bg)">+×=</text>
-      </svg>
-    </div>
-    <div class="logo-text">
-      <span class="logo-text-th">คำนวณ</span>
-      <span class="logo-text-en">KAMNUAN</span>
-    </div>
-  </a>
-  <button class="dark-toggle" onclick="toggleDark()" title="เปลี่ยนธีม">
-    <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
-      <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-    </svg>
-    <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-    </svg>
-  </button>
+<a class="skip-link" href="#main-content">ข้ามไปเนื้อหาหลัก</a>
+<header role="banner">
+  <a class="logo" href="/" aria-label="คำนวณ หน้าหลัก"><svg viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect width="30" height="30" rx="6" fill="var(--ink)"/><text x="4" y="22" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="var(--inv)">K</text><text x="13" y="25" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="var(--inv)">+x=</text></svg><div class="logo-t"><span class="logo-th">คำนวณ</span><span class="logo-en">KAMNUAN</span></div></a>
+  <div class="hdr-right">
+    <a class="back-btn" href="/" aria-label="กลับไปดูเครื่องมือทั้งหมด"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
+    <button class="dark-btn" id="darkBtn" onclick="toggleDark()" aria-label="สลับโหมดสีเข้ม/สว่าง" type="button"><svg id="iSun" style="display:none" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg id="iMoon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+  </div>
 </header>
+<div class="ad-bar" role="complementary" aria-label="โฆษณา"><div class="ad-728"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1063556443578237" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div></div>
 
-<div class="ad-strip"><div class="ad-728">📢 Google AdSense — 728×90 Leaderboard (Top)</div></div>
-
-<div class="page-wrap">
-  <div class="page-heading">
+<main id="main-content" class="page">
+  <div class="page-hd">
     <h1>คำนวณพื้นที่ห้อง</h1>
-    <p>ใส่ความกว้างและความยาว รู้พื้นที่ทันที พร้อมคำแนะนำขนาดแอร์และปริมาณวัสดุ</p>
+    <p>กรอกความกว้างและความยาว รู้พื้นที่ห้องเป็นตารางเมตร ตารางวา และตารางฟุตทันที</p>
   </div>
 
-  <span class="field-label">หน่วยที่ใช้วัด</span>
-  <div class="unit-toggle">
-    <button class="unit-btn-sm active" id="unitM" onclick="switchUnit('m')">เมตร</button>
-    <button class="unit-btn-sm" id="unitCm" onclick="switchUnit('cm')">เซนติเมตร</button>
-    <button class="unit-btn-sm" id="unitFt" onclick="switchUnit('ft')">ฟุต</button>
-  </div>
-
-  <div class="input-row">
-    <div class="input-group">
-      <span class="field-label">ความกว้าง</span>
-      <div class="input-wrap">
-        <input type="number" id="width" placeholder="เช่น 4" min="0" inputmode="decimal">
-        <span class="input-suffix" id="unitLabel">ม.</span>
+  <div class="card"><div class="card-body">
+    <!-- หน่วยวัด -->
+    <div class="field">
+      <label class="lbl">หน่วยที่วัดมา</label>
+      <div class="unit-tabs" role="group" aria-label="เลือกหน่วยวัด">
+        <button class="u-tab on" id="u-m"  onclick="setUnit('m')"  type="button">เมตร</button>
+        <button class="u-tab"     id="u-cm" onclick="setUnit('cm')" type="button">เซนติเมตร</button>
+        <button class="u-tab"     id="u-ft" onclick="setUnit('ft')" type="button">ฟุต</button>
       </div>
     </div>
-    <div class="input-group">
-      <span class="field-label">ความยาว</span>
-      <div class="input-wrap">
-        <input type="number" id="length" placeholder="เช่น 5" min="0" inputmode="decimal">
-        <span class="input-suffix" id="unitLabel2">ม.</span>
+    <!-- ขนาดห้อง -->
+    <div class="grid2">
+      <div class="field">
+        <label class="lbl" for="r-w">ความกว้าง</label>
+        <div class="inp-row">
+          <input type="number" id="r-w" placeholder="เช่น 4" min="0" inputmode="decimal">
+          <div class="inp-suf" id="u-suf1">ม.</div>
+        </div>
+      </div>
+      <div class="field">
+        <label class="lbl" for="r-l">ความยาว</label>
+        <div class="inp-row">
+          <input type="number" id="r-l" placeholder="เช่น 5" min="0" inputmode="decimal">
+          <div class="inp-suf" id="u-suf2">ม.</div>
+        </div>
       </div>
     </div>
-  </div>
-  <p class="hint">ตัวอย่าง: ห้อง 4 × 5 เมตร = 20 ตารางเมตร</p>
+    <button class="btn-calc" onclick="calc()" type="button">คำนวณพื้นที่</button>
+  </div></div>
 
-  <button class="btn-calc" onclick="calculate()">คำนวณพื้นที่</button>
-  <button class="btn-reset" onclick="resetForm()">เริ่มใหม่</button>
-
-  <div class="result-box" id="resultBox">
-    <div class="result-main">
-      <div class="result-label">พื้นที่ห้อง</div>
-      <div>
-        <span class="result-num" id="areaSqm">–</span>
-        <span class="result-unit">ตร.ม.</span>
-      </div>
+  <!-- ผลลัพธ์ -->
+  <div class="result-box" id="resultBox" role="region" aria-label="ผลการคำนวณ">
+    <div class="result-top">
+      <div class="result-lbl">พื้นที่ห้อง</div>
+      <div><span class="result-num" id="res-sqm">–</span><span class="result-unit">ตร.ม.</span></div>
+      <div class="result-sub" id="res-sub"></div>
     </div>
-
-    <div class="stats-row">
-      <div class="stat-cell"><div class="stat-num" id="areaSqwa">–</div><div class="stat-label">ตารางวา</div></div>
-      <div class="stat-cell"><div class="stat-num" id="areaSqft">–</div><div class="stat-label">ตารางฟุต</div></div>
-    </div>
-
-    <div class="tips-card">
-      <div class="tips-title" style="text-align:center;">คำแนะนำ</div>
-      <div id="airconTips"></div>
-      <div class="tip-item" style="margin-top:8px;"><div class="tip-dot"></div><div>กระเบื้อง 60×60 ซม. ต้องใช้ประมาณ <strong id="tilePcs">–</strong> แผ่น (รวมเผื่อ 10%)</div></div>
-      <div class="tip-item"><div class="tip-dot"></div><div>สีทาพื้น ต้องใช้ประมาณ <strong id="paintCans">–</strong> กระป๋อง (กระป๋อง 5 ลิตร)</div></div>
-    </div>
-    <p style="font-size:11px;color:var(--text3);text-align:center;margin-bottom:12px;">เป็นการประมาณการเบื้องต้นเท่านั้น ขึ้นอยู่กับสภาพห้อง ความสูงฝ้า และลายกระเบื้องที่เลือก</p>
-
-    <div class="share-row">
-      <button class="btn-share-action" onclick="shareLine()">Line</button>
-      <button class="btn-share-action" onclick="shareFacebook()">Facebook</button>
-      <button class="btn-share-action" onclick="copyResult()">คัดลอก</button>
+    <div class="result-body">
+      <div class="bd-row"><span class="bd-lbl">ตารางวา</span><span class="bd-val" id="res-sqwa">–</span></div>
+      <div class="bd-row"><span class="bd-lbl">ตารางฟุต</span><span class="bd-val" id="res-sqft">–</span></div>
+      <div class="bd-row"><span class="bd-lbl">ตารางเซนติเมตร</span><span class="bd-val" id="res-sqcm">–</span></div>
     </div>
   </div>
 
-  <div class="history-section">
-    <div class="history-header">
-      <span class="history-title">ประวัติการคำนวณ</span>
-      <button class="btn-clear-history" onclick="clearHistory()">ล้างประวัติ</button>
-    </div>
-    <div class="history-list" id="historyList">
-      <div class="history-empty">ยังไม่มีประวัติการคำนวณ</div>
-    </div>
+  <!-- ประวัติ -->
+  <div class="hist-wrap">
+    <div class="hist-head"><span class="hist-lbl">ประวัติการคำนวณ</span><button class="hist-clr" onclick="clearHist()" type="button">ล้างประวัติ</button></div>
+    <div class="hist-list" id="histList"><div class="h-empty">ยังไม่มีประวัติ</div></div>
   </div>
 
-  <div class="ad-mid"><div class="ad-728">📢 Google AdSense — 728×90 Leaderboard (In-content)</div></div>
-
-  <div class="info-section">
-    <h2>วิธีคำนวณพื้นที่ห้อง</h2>
-    <p>พื้นที่ห้องสี่เหลี่ยม = ความกว้าง × ความยาว เช่น ห้อง 4 × 5 เมตร มีพื้นที่ 20 ตารางเมตร หากห้องมีรูปทรงซับซ้อน ให้แบ่งเป็นสี่เหลี่ยมย่อยๆ แล้วนำมาบวกกัน</p>
-    <h2 class="mt">ขนาดแอร์ที่เหมาะสม</h2>
-    <p>ห้อง 1–12 ตร.ม. ใช้แอร์ 9,000 BTU · ห้อง 12–18 ตร.ม. ใช้แอร์ 12,000 BTU · ห้อง 18–25 ตร.ม. ใช้แอร์ 18,000 BTU · ห้อง 25–35 ตร.ม. ใช้แอร์ 24,000 BTU · ห้องที่โดนแดดหรือมีคนอยู่มากควรเลือก BTU สูงกว่านี้</p>
+  <!-- FAQ -->
+  <div class="faq-wrap">
+    <h2 class="faq-h2">คำถามที่พบบ่อย</h2>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">พื้นที่ห้องคำนวณยังไง?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">พื้นที่ห้อง = ความกว้าง × ความยาว เช่น ห้อง 4×5 เมตร = <strong>20 ตารางเมตร</strong></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">1 ตารางเมตร เท่ากับกี่ตารางวา?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">1 ตารางเมตร = <strong>0.25 ตารางวา</strong> หรือ 1 ตารางวา = 4 ตารางเมตร</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">1 ตารางเมตร เท่ากับกี่ตารางฟุต?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">1 ตารางเมตร = <strong>10.764 ตารางฟุต</strong></div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ห้อง 3×4 เมตร มีพื้นที่เท่าไหร่?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a">ห้อง 3×4 เมตร มีพื้นที่ <strong>12 ตารางเมตร</strong> = 3 ตารางวา = 129.17 ตารางฟุต</div></div>
   </div>
 
-  <div class="ad-mid" style="margin-bottom:0;"><div class="ad-728">📢 Google AdSense — 728×90 Leaderboard (Bottom)</div></div>
-</div>
-
-<footer>
-  <p>© 2568 คำนวณพื้นที่ห้องออนไลน์ · <a href="#">นโยบายความเป็นส่วนตัว</a> · <a href="#">ติดต่อ</a></p>
-  <p style="margin-top:4px;">ผลลัพธ์เป็นการประมาณการ ควรสั่งวัสดุเผื่อไว้ประมาณ 10%</p>
-</footer>
-<div class="toast" id="toast">คัดลอกแล้ว!</div>
+  <div class="related-wrap">
+    <div class="related-lbl">เครื่องมือที่เกี่ยวข้อง</div>
+    <div class="related-grid">
+      <a class="related-card" href="/kamnuanruptong/"><div class="related-ico"><svg viewBox="0 0 24 24"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg></div><span class="related-name">คำนวณพื้นที่รูปทรง</span></a>
+      <a class="related-card" href="/kamnuanteedin/"><div class="related-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><span class="related-name">แปลงหน่วยที่ดิน</span></a>
+      <a class="related-card" href="/kamnuankhwamyao/"><div class="related-ico"><svg viewBox="0 0 24 24"><path d="M2 12h20M2 12l4-4M2 12l4 4"/></svg></div><span class="related-name">แปลงหน่วยความยาว</span></a>
+      <a class="related-card" href="/kamnuanruptong/"><div class="related-ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/></svg></div><span class="related-name">คำนวณพื้นที่รูปทรง</span></a>
+    </div>
+  </div>
+</main>
+<footer role="contentinfo"><p>© 2569 คำนวณ · <a href="/">หน้าหลัก</a> · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></p></footer>
 
 <script>
-function initTheme(){const s=localStorage.getItem('theme');const p=window.matchMedia('(prefers-color-scheme: dark)').matches;applyTheme(s||(p?'dark':'light'));}
-function applyTheme(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iconSun').style.display=t==='dark'?'block':'none';document.getElementById('iconMoon').style.display=t==='light'?'block':'none';localStorage.setItem('theme',t);}
-function toggleDark(){applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
+function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefers-color-scheme:dark)').matches;applyT(s||(p?'dark':'light'));}
+function applyT(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iSun').style.display=t==='dark'?'block':'none';document.getElementById('iMoon').style.display=t==='light'?'block':'none';document.getElementById('darkBtn').setAttribute('aria-label',t==='dark'?'เปลี่ยนเป็นโหมดสว่าง':'เปลี่ยนเป็นโหมดสีเข้ม');localStorage.setItem('theme',t);}
+function toggleDark(){applyT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
 initTheme();
+function toggleFaq(btn){const e=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!e));btn.nextElementSibling.classList.toggle('open',!e);}
 
-let currentUnit='m';
-let lastResult=null;
-
-function switchUnit(u){
-  currentUnit=u;
-  ['m','cm','ft'].forEach(x=>document.getElementById('unit'+x.charAt(0).toUpperCase()+x.slice(1)).classList.toggle('active',x===u));
-  const labels={m:'ม.',cm:'ซม.',ft:'ฟุต'};
-  document.getElementById('unitLabel').textContent=labels[u];
-  document.getElementById('unitLabel2').textContent=labels[u];
+let unit='m';
+function setUnit(u){
+  unit=u;
+  ['m','cm','ft'].forEach(x=>{
+    const b=document.getElementById('u-'+x);
+    b.classList.toggle('on',x===u);
+  });
+  const lbl={m:'ม.',cm:'ซม.',ft:'ฟุต'}[u];
+  document.getElementById('u-suf1').textContent=lbl;
+  document.getElementById('u-suf2').textContent=lbl;
 }
 
-function fmt(n){return parseFloat(n.toFixed(2)).toLocaleString('th-TH');}
+const hist=JSON.parse(localStorage.getItem('roomHist')||'[]');
 
-function getAirconTip(sqm){
-  if(sqm<=12)return[{text:'แนะนำแอร์ <strong>9,000 BTU</strong> เหมาะกับห้องนอนขนาดเล็ก'}];
-  if(sqm<=18)return[{text:'แนะนำแอร์ <strong>12,000 BTU</strong> เหมาะกับห้องนอนทั่วไป'}];
-  if(sqm<=25)return[{text:'แนะนำแอร์ <strong>18,000 BTU</strong> เหมาะกับห้องนั่งเล่นขนาดกลาง'}];
-  if(sqm<=35)return[{text:'แนะนำแอร์ <strong>24,000 BTU</strong> เหมาะกับห้องนั่งเล่นขนาดใหญ่'}];
-  return[{text:'แนะนำแอร์ <strong>36,000 BTU ขึ้นไป</strong> หรืออาจต้องใช้หลายเครื่อง'}];
+function fmt(n){
+  if(n===0||isNaN(n)) return '0';
+  if(n>=1) return parseFloat(n.toFixed(2)).toLocaleString('th-TH');
+  // ค่าเล็กกว่า 1 ใช้ significant figures
+  return parseFloat(n.toPrecision(4)).toLocaleString('th-TH');
 }
+function fmtInt(n){return Math.round(n).toLocaleString('th-TH');}
 
-function calculate(){
-  const w=parseFloat(document.getElementById('width').value);
-  const l=parseFloat(document.getElementById('length').value);
-  if(!w||!l){alert('กรุณากรอกความกว้างและความยาว');return;}
+function calc(){
+  const w=parseFloat(document.getElementById('r-w').value);
+  const l=parseFloat(document.getElementById('r-l').value);
+  if(!w||!l||w<=0||l<=0){alert('กรุณากรอกความกว้างและความยาว');return;}
 
   let sqm;
-  if(currentUnit==='m')sqm=w*l;
-  else if(currentUnit==='cm')sqm=w*l/10000;
-  else sqm=w*l*0.0929;
+  if(unit==='m')       sqm=w*l;
+  else if(unit==='cm') sqm=w*l/10000;
+  else                 sqm=w*l*0.09290304;
 
   const sqwa=sqm/4;
-  const sqft=sqm/0.0929;
-  const tiles=Math.ceil(sqm/0.36*1.1);
-  const paint=Math.ceil(sqm/25);
+  const sqft=sqm/0.09290304;
+  const sqcm=sqm*10000;
+  const lbl={m:'เมตร',cm:'เซนติเมตร',ft:'ฟุต'}[unit];
 
-  document.getElementById('areaSqm').textContent=fmt(sqm);
-  document.getElementById('areaSqwa').textContent=fmt(sqwa);
-  document.getElementById('areaSqft').textContent=fmt(sqft);
-  document.getElementById('tilePcs').textContent=tiles.toLocaleString('th-TH');
-  document.getElementById('paintCans').textContent=paint;
+  document.getElementById('res-sqm').textContent=fmt(sqm);
+  document.getElementById('res-sub').innerHTML=`กว้าง <strong>${w}</strong> × ยาว <strong>${l}</strong> ${lbl}`;
+  document.getElementById('res-sqwa').textContent=fmt(sqwa)+' ตร.วา';
+  document.getElementById('res-sqft').textContent=fmt(sqft)+' ตร.ฟุต';
+  document.getElementById('res-sqcm').textContent=fmtInt(sqcm)+' ตร.ซม.';
 
-  const tips=getAirconTip(sqm);
-  document.getElementById('airconTips').innerHTML=tips.map(t=>`<div class="tip-item"><div class="tip-dot"></div><div>${t.text}</div></div>`).join('');
+  document.getElementById('resultBox').style.display='block';
 
-  lastResult={sqm,sqwa,sqft,tiles,w,l,unit:currentUnit};
-  saveHistory(lastResult);
-
-  const box=document.getElementById('resultBox');box.style.display='block';
-  requestAnimationFrame(()=>box.scrollIntoView({behavior:'smooth',block:'nearest'}));
+  hist.unshift({sqm:fmt(sqm),detail:`${w}×${l} ${lbl}`,t:new Date().toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'})});
+  if(hist.length>5)hist.pop();
+  localStorage.setItem('roomHist',JSON.stringify(hist));
+  renderHist();
+  requestAnimationFrame(()=>document.getElementById('resultBox').scrollIntoView({behavior:'smooth',block:'nearest'}));
 }
 
-function resetForm(){document.getElementById('width').value='';document.getElementById('length').value='';document.getElementById('resultBox').style.display='none';}
-
-function getShareText(){if(!lastResult)return'';const{sqm,sqwa,sqft,w,l,unit}=lastResult;const uLabel={m:'เมตร',cm:'เซนติเมตร',ft:'ฟุต'}[unit];return`คำนวณพื้นที่ห้อง\nขนาด ${w} × ${l} ${uLabel}\nพื้นที่ ${fmt(sqm)} ตร.ม. = ${fmt(sqwa)} ตร.วา = ${fmt(sqft)} ตร.ฟุต\nhttps://pntsm12.github.io/kamnuanphuenthi/`;}
-function shareLine(){window.open('https://line.me/R/msg/text/?'+encodeURIComponent(getShareText()),'_blank');}
-function shareFacebook(){window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://pntsm12.github.io/kamnuanphuenthi/'),'_blank');}
-function copyResult(){navigator.clipboard.writeText(getShareText()).then(showToast).catch(()=>{const ta=document.createElement('textarea');ta.value=getShareText();document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showToast();});}
-
-function saveHistory(r){const item={area:fmt(r.sqm)+' ตร.ม.',detail:`${r.w} × ${r.l} ${r.unit}`,time:new Date().toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'})};let h=JSON.parse(localStorage.getItem('roomHistory')||'[]');h.unshift(item);h=h.slice(0,5);localStorage.setItem('roomHistory',JSON.stringify(h));renderHistory();}
-function renderHistory(){const list=document.getElementById('historyList');const h=JSON.parse(localStorage.getItem('roomHistory')||'[]');if(!h.length){list.innerHTML='<div class="history-empty">ยังไม่มีประวัติการคำนวณ</div>';return;}list.innerHTML=h.map(item=>`<div class="history-item"><div class="history-item-left"><div class="history-item-area">${item.area}</div><div class="history-item-detail">${item.detail}</div></div><div class="history-item-right">${item.time}</div></div>`).join('');}
-function clearHistory(){localStorage.removeItem('roomHistory');renderHistory();}
-function showToast(){const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);}
-renderHistory();
+function renderHist(){
+  const el=document.getElementById('histList');
+  if(!hist.length){el.innerHTML='<div class="h-empty">ยังไม่มีประวัติ</div>';return;}
+  el.innerHTML=hist.map(h=>`<div class="h-item"><div class="h-main">${h.sqm} ตร.ม.</div><div class="h-sub">${h.detail} ${h.t}</div></div>`).join('');
+}
+function clearHist(){hist.length=0;localStorage.removeItem('roomHist');renderHist();}
+renderHist();
 </script>
 </body>
 </html>
