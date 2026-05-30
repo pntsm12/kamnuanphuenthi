@@ -91,20 +91,18 @@ footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:1
       </div>
     </div>
     <!-- ขนาดห้อง -->
-    <div class="grid2">
-      <div class="field">
-        <label class="lbl" for="r-w">ความกว้าง</label>
-        <div class="inp-row">
-          <input type="number" id="r-w" placeholder="เช่น 4" min="0" inputmode="decimal">
-          <div class="inp-suf" id="u-suf1">ม.</div>
-        </div>
+    <div class="field">
+      <label class="lbl" for="r-w">ความกว้าง</label>
+      <div class="inp-row">
+        <input type="number" id="r-w" placeholder="เช่น 4" min="0" inputmode="decimal">
+        <div class="inp-suf" id="u-suf1">ม.</div>
       </div>
-      <div class="field">
-        <label class="lbl" for="r-l">ความยาว</label>
-        <div class="inp-row">
-          <input type="number" id="r-l" placeholder="เช่น 5" min="0" inputmode="decimal">
-          <div class="inp-suf" id="u-suf2">ม.</div>
-        </div>
+    </div>
+    <div class="field">
+      <label class="lbl" for="r-l">ความยาว</label>
+      <div class="inp-row">
+        <input type="number" id="r-l" placeholder="เช่น 5" min="0" inputmode="decimal">
+        <div class="inp-suf" id="u-suf2">ม.</div>
       </div>
     </div>
     <button class="btn-calc" onclick="calc()" type="button">คำนวณพื้นที่</button>
@@ -149,7 +147,7 @@ footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:1
     </div>
   </div>
 </main>
-<footer role="contentinfo"><p>© 2569 คำนวณ · <a href="/">หน้าหลัก</a> · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></p></footer>
+<footer role="contentinfo"><p>© 2569 คำนวณ <a href="/">หน้าหลัก</a> <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></p></footer>
 
 <script>
 function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefers-color-scheme:dark)').matches;applyT(s||(p?'dark':'light'));}
